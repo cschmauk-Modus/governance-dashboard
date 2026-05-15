@@ -33,7 +33,7 @@ const RED = "#DC2626";
 const GREEN = "#10B981";
 const BLUE = "#2563EB";
 
-const demoWorkbook = 
+const demoWorkbook = {
   Empresa: [
     { Campo: "Empresa", Valor: "Cenco Malls" },
     { Campo: "Industria", Valor: "Retail Inmobiliario / Centros Comerciales" },
