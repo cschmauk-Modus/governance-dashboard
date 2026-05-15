@@ -33,7 +33,7 @@ const RED = "#DC2626";
 const GREEN = "#10B981";
 const BLUE = "#2563EB";
 
-const demoWorkbook = {
+const demoWorkbook = 
   Empresa: [
     { Campo: "Empresa", Valor: "Cenco Malls" },
     { Campo: "Industria", Valor: "Retail Inmobiliario / Centros Comerciales" },
@@ -95,12 +95,12 @@ const demoWorkbook = {
   ],
 };
 
-function valueOf(rows, key, fallback = "—") {
+function valueOf(rows: any[], key: string, fallback: any = "—") {
   const found = rows?.find((r) => String(r.Campo || "").trim().toLowerCase() === key.toLowerCase());
   return found?.Valor ?? fallback;
 }
 
-function n(v, fallback = 0) {
+function n(v: any, fallback: number = 0) {
   const x = Number(String(v ?? "").replace(",", "."));
   return Number.isFinite(x) ? x : fallback;
 }
